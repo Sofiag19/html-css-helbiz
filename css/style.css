@@ -4,3 +4,83 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@font-face {
+
+}
+
+/* header */
+
+  /* nav bar */
+  nav {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 40px;
+    width: 100%;
+    background-color: white;
+  }
+
+    nav .container {
+      width: 70%;
+      line-height: 40px;
+    }
+
+  /* title */
+  #title {
+    margin-top: 40px;
+    position: relative;
+    height: 150px; /* DEBUG:  */
+    background-color: blue; /* DEBUG:  */
+  }
+
+    #title .center {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%,-50%);
+    }
+
+/* section products */
+#product {
+  height: 100px; /* DEBUG:  */
+  background-color: grey; /* DEBUG:  */
+}
+
+/* section how works */
+#how {
+  height: 100px; /* DEBUG:  */
+  background-color: yellow; /* DEBUG:  */
+}
+
+/* section links */
+#links {
+  height: 100px; /* DEBUG:  */
+  background-color: orange; /* DEBUG:  */
+}
+
+/* section patchwork */
+#patchwork {
+  height: 100px; /* DEBUG:  */
+  background-color: pink; /* DEBUG:  */
+}
+
+/* footer */
+
+  /* info */
+  #info {
+    height: 100px; /* DEBUG:  */
+    background-color: green; /* DEBUG:  */
+  }
+
+  /* social */
+  #social {
+    height: 50px; /* DEBUG:  */
+    background-color: black; /* DEBUG:  */
+  }
+
+  /* stores */
+  #stores {
+    height: 50px; /* DEBUG:  */
+    background-color: green; /* DEBUG:  */
+  }
