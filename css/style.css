@@ -5,8 +5,27 @@
   box-sizing: border-box;
 }
 
-@font-face {
+.center {
+  text-align: center;
+}
 
+.liststyle {
+  list-style-type: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.center-absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.left {
+  float: left;
 }
 
 /* header */
@@ -26,61 +45,93 @@
       line-height: 40px;
     }
 
+    nav .container ul li a {
+      color: black;
+      text-decoration: none;
+    }
+
   /* title */
   #title {
     margin-top: 40px;
-    position: relative;
-    height: 150px; /* DEBUG:  */
-    background-color: blue; /* DEBUG:  */
+    height: 470px;
+    background-image: url("../img/HelbizOrig.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
-    #title .center {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(-50%,-50%);
+/* main */
+
+  /* section products */
+  #product {
+    height: 100px; /* DEBUG:  */
+    width: 100%;
+    padding: 0 2%;
+  }
+
+      #product .container div {
+        width: 48%;
+        background-color: rgba(189, 189, 189, 0.23);
+      }
+
+      #product .container div:first-of-type {
+        margin-right: 4%;
+      }
+
+  /* section how works */
+    .how-up {
+      height: 400px;
+      background-image: url("../img/HelbizBanner.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
-/* section products */
-#product {
-  height: 100px; /* DEBUG:  */
-  background-color: grey; /* DEBUG:  */
-}
+    .how-down {
+      padding: 20px 0;
+    }
 
-/* section how works */
-#how {
-  height: 100px; /* DEBUG:  */
-  background-color: yellow; /* DEBUG:  */
-}
+    #how img {
+      max-width: 50%;
+    }
 
-/* section links */
-#links {
-  height: 100px; /* DEBUG:  */
-  background-color: orange; /* DEBUG:  */
-}
+  /* section links */
+  #links {
+    height: 100px; /* DEBUG:  */
+    background-color: orange; /* DEBUG:  */
+    padding: 0 2%;
+  }
 
-/* section patchwork */
-#patchwork {
-  height: 100px; /* DEBUG:  */
-  background-color: pink; /* DEBUG:  */
-}
+    #links .container .center.left {
+      width: 48%;
+    }
 
 /* footer */
 
-  /* info */
-  #info {
+  /* footer up */
+  #footer-up {
     height: 100px; /* DEBUG:  */
-    background-color: green; /* DEBUG:  */
+    background-color: pink; /* DEBUG:  */
+    background-image: url("../img/Social-Banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  /* social */
-  #social {
-    height: 50px; /* DEBUG:  */
-    background-color: black; /* DEBUG:  */
+  /* footer down */
+
+  .footer-down {
+    background-color: black;
   }
 
-  /* stores */
-  #stores {
-    height: 50px; /* DEBUG:  */
-    background-color: green; /* DEBUG:  */
-  }
+    /* info */
+    #info {
+      height: 100px; /* DEBUG:  */
+    }
+
+    /* social */
+    #social {
+      height: 50px; /* DEBUG:  */
+    }
+
+    /* stores */
+    #stores {
+      height: 50px; /* DEBUG:  */
+    }
