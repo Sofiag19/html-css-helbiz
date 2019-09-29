@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+.black {
+  background-color: black;
+}
+
+.leftrightborder {
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+}
+
 .center {
   text-align: center;
 }
@@ -28,6 +37,14 @@
   float: left;
 }
 
+.height22 {
+  max-height: 22px;
+}
+
+.width35 {
+  max-width: 35%;
+}
+
 /* header */
 
   /* nav bar */
@@ -35,103 +52,201 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    height: 40px;
+    height: 50px;
     width: 100%;
-    background-color: white;
+    font-size: 10px;
   }
 
     nav .container {
       width: 70%;
-      line-height: 40px;
+      line-height: 50px;
     }
 
-    nav .container ul li a {
-      color: black;
-      text-decoration: none;
-    }
+          .logo {
+            margin-top: 15px;
+          }
+
+          nav .container ul li a {
+            color: white;
+            text-decoration: none;
+          }
 
   /* title */
   #title {
-    margin-top: 40px;
+    margin-top: 50px;
     height: 470px;
     background-image: url("../img/HelbizOrig.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
   }
+
+    #title div {
+      line-height: 45px;
+      text-shadow: 4px 3px 4px #000000;
+    }
+
+      #title div h1 {
+        font-size: 30px;
+      }
+
+      #title div p {
+        font-size: 15px;
+      }
 
 /* main */
 
   /* section products */
   #product {
-    height: 100px; /* DEBUG:  */
+    /* height: 100px; /* DEBUG:  */ */
     width: 100%;
     padding: 0 2%;
   }
 
+    #product .container {
+      margin: 60px 0;
+    }
+
       #product .container div {
         width: 48%;
         background-color: rgba(189, 189, 189, 0.23);
+        padding: 40px 0;
+        line-height: 40px;
       }
 
       #product .container div:first-of-type {
         margin-right: 4%;
       }
 
+      #product .container div a {
+        text-decoration: none;
+        display: block;
+      }
+
   /* section how works */
+
     .how-up {
-      height: 400px;
+      height: 450px;
       background-image: url("../img/HelbizBanner.jpg");
       background-size: cover;
       background-repeat: no-repeat;
     }
 
     .how-down {
-      padding: 20px 0;
+      margin: 40px 0;
     }
 
-    #how img {
+      .how.down div h2 {
+        font-size: 36px;
+      }
+
+      .how.down div h4 {
+        font-size: 18px;
+      }
+
+      .how.down div p{
+        font-size: 16px;
+      }
+
+  #how div:last-of-type {
+    top: 55%;
+  }
+
+    #how div img {
       max-width: 50%;
     }
 
   /* section links */
-  #links {
-    height: 100px; /* DEBUG:  */
-    background-color: orange; /* DEBUG:  */
+  /* #links {
+    background-color: orange; DEBUG:
     padding: 0 2%;
+    margin: 60px 0;
   }
 
-    #links .container .center.left {
-      width: 48%;
+    .smart {
+      height: 500px;
+      background-image: url("../img/ScooterHelbiz-2400.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
+
+      #links .container .center.left {
+        width: 48%;
+      } */
 
 /* footer */
 
   /* footer up */
   #footer-up {
-    height: 100px; /* DEBUG:  */
-    background-color: pink; /* DEBUG:  */
+    height: 420px;
     background-image: url("../img/Social-Banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 40px 0;
   }
+
+    #footer-up div {
+      background-color: white;
+      padding: 40px 60px;
+      font-size: 32px;
+      line-height: 50px;
+    }
+
+      #footer-up div h3 {
+      }
+
+        #footer-up div ul li a{
+          text-decoration: none;
+          color: black;
+        }
 
   /* footer down */
 
-  .footer-down {
+  #footer-down {
     background-color: black;
+    height: 500px; /* DEBUG:  */
+    color: white;
+    padding: 20px 15%;
   }
 
     /* info */
     #info {
-      height: 100px; /* DEBUG:  */
+      padding: 60px 0;
     }
+
+    .logo.bottom {
+      margin-top: 0;
+    }
+
+    #info ul li h4 {
+      margin-bottom: 20px;
+    }
+
+    #info ul li ul li {
+      line-height: 30px;
+    }
+
+     #info ul li a,
+     #info ul li ul li a {
+       text-decoration: none;
+       color: rgba(182, 182, 182, 0.5);
+     }
 
     /* social */
     #social {
-      height: 50px; /* DEBUG:  */
+      padding: 40px 0;
+      border-top: 1px solid rgba(182, 182, 182, 0.5);
+      border-bottom: 1px solid rgba(182, 182, 182, 0.5);
+      line-height: 30px;
+    }
+
+    #social ul li a,
+    #social ul li ul li a {
+      text-decoration: none;
+      color: white;
     }
 
     /* stores */
     #stores {
-      height: 50px; /* DEBUG:  */
+      height: 100px;
     }
