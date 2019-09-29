@@ -16,7 +16,7 @@
       <!-- nav bar -->
         <nav class="black">
           <div class="container">
-            <div class="col-lg-2">
+            <div class="col-lg-2 col-md-2 col-xs-2">
               <a href="#"><img src="https://helbiz.com/asset/img/helbiz-new-logo-white.svg" alt="logo" class="logo"></a>
             </div>
             <ul class="liststyle center col-lg-offset-3 col-lg-5">
@@ -31,6 +31,9 @@
               <li class="leftrightborder col-lg-4"><a href="#">ITA</a></li>
               <li class="col-lg-4"><a href="#">ES</a></li>
             </ul>
+            <div id="hamburger" class="col-md-offset-8 col-md-2 col-xs-offset-8 col-xs-2">
+              <i class="fas fa-bars"></i>
+            </div>
           </div>
         </nav>
 
@@ -49,13 +52,13 @@
       <!-- section products-->
       <section id="product">
         <div class="container">
-          <div class="center left">
+          <div class="center left col-xs-12">
             <img src="https://helbiz.com/asset/pages/newhome/images/HGO_blk_trans.svg" alt="HELBIZGO" class="height22">
             <p>Seamless E-Scooter sharing globally.</p>
             <a href="#">Learn More<i class="fas fa-angle-right"></i></a>
             <img src="https://helbiz.com/asset/pages/newhome/images/HelbizGOxSegway.jpg" alt="monopattino" class="width35">
           </div>
-          <div class="center left">
+          <div class="center left col-xs-12">
             <img src="https://helbiz.com/asset/pages/newhome/images/HBIKE_blk_trans.svg" alt="HELBIZBIKE" class="height22">
             <p>Next generation of electric city bikes.</p>
             <a href="#">Learn More<i class="fas fa-angle-right"></i></a>
@@ -66,12 +69,12 @@
 
       <!-- section how works -->
       <section id="how" class="relative">
-        <div class="how-up"></div>
+        <div class="how-up"></div> <!-- DEBUG: attenzione! immagine non responsive -->
         <div class="how-down container">
-          <div class="col-lg-offset-2 col-lg-2">
+          <div class="col-lg-offset-2 col-lg-2 col-md-offset-2 col-md-10 col-xs-offset-2 col-xs-10">
             <h2>How does Helbiz work?</h2>
           </div>
-          <div class="col-lg-offset-4 col-lg-2">
+          <div class="col-lg-offset-4 col-lg-2 col-md-offset-2 col-md-10 col-xs-offset-2 col-xs-10">
             <h4>Step 3</h4>
             <p>Ride for 0.15€ per min</p>
           </div>
@@ -84,7 +87,7 @@
       <!-- section links -->
       <section id="links">
           <div class="relative">
-              <div id="smart" class="center">
+              <div id="smart" class="center"> <!-- DEBUG: attenzione ! mi sa che la scritta andava fatta con il framework?!?!? -->
                 <h3>Smart mobility
                 on two wheels</h3>
                 <p>A cleaner and more convenient
@@ -93,13 +96,13 @@
               </div>
           </div>
           <div class="container">
-            <div id="get"class="center left">
+            <div id="get"class="center left col-xs-12">
               <h3>Get the App</h3>
               <p>Download the app and start riding today</p>
               <a href="#">IOS<i class="fas fa-angle-right"></i></a>
               <a href="#">Android<i class="fas fa-angle-right"></i></a>
             </div>
-            <div id="find" class="center left">
+            <div id="find" class="center left col-xs-12">
               <h3>Find us around</h3>
               <p>Find us around the globe</p>
               <a href="#">Our cities<i class="fas fa-angle-right"></i></a>
@@ -117,10 +120,10 @@
         <div class="center center-absolute">
           <h3>#HelbizFamily</h3>
           <ul class="container center liststyle">
-            <li class="col-lg-3"><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li class="col-lg-3"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="col-lg-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li class="col-lg-3"><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-xs-3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-xs-3"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-xs-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="col-lg-3 col-md-3 col-xs-3"><a href="#"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
       </section>
@@ -130,8 +133,8 @@
         <!-- info -->
         <div id="info">
           <ul class="container liststyle">
-            <li class="col-lg-3"> <img src="https://helbiz.com/asset/img/helbiz-new-logo-white.svg" alt="logo" class="logo bottom"> </li>
-            <li class="col-lg-3">
+            <li class="col-lg-3 col-md-3 col-xs-12"> <img src="https://helbiz.com/asset/img/helbiz-new-logo-white.svg" alt="logo" class="logo bottom"> </li>
+            <li class="col-lg-3 col-md-3 col-xs-4">
               <h4>PRODUCT</h4>
               <ul class="liststyle">
                 <li><a href="#">HelbizGO</a></li>
@@ -139,7 +142,7 @@
                 <li><a href="#">HelbizAir</a></li>
               </ul>
             </li>
-            <li class="col-lg-3">
+            <li class="col-lg-3 col-md-3 col-xs-4">
               <h4>INFO</h4>
               <ul class="liststyle">
                 <li><a href="#">About us</a></li>
@@ -150,7 +153,7 @@
                 <li><a href="#">Careers</a></li>
               </ul>
             </li>
-            <li class="col-lg-3">
+            <li class="col-lg-3 col-md-3 col-xs-4">
               <h4>HELBIZ</h4>
               <ul class="liststyle">
                 <li><a href="#">Contact Us</a></li>
@@ -166,30 +169,30 @@
         <!-- social -->
         <div id="social">
           <ul class="container liststyle">
-            <li class="col-lg-3">
+            <li class="col-lg-3 col-md-3 col-xs-12">
               <ul class="container liststyle">
-                <li class="col-lg-offset-1 col-lg-2"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li class="col-lg-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li class="col-lg-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li class="col-lg-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li class="col-lg-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li class="col-lg-2 col-md-2 col-xs-2"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="col-lg-2 col-md-2 col-xs-2"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li class="col-lg-2 col-md-2 col-xs-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="col-lg-2 col-md-2 col-xs-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li class="col-lg-2 col-md-2 col-xs-2"><a href="#"><i class="fab fa-linkedin"></i></a></li>
               </ul>
             </li>
-            <li class="col-lg-3">
+            <li class="col-lg-3 col-md-3 col-xs-12">
               <p> <a href="#">Terms & Conditions</a> </p>
               <p> <a href="#">Regolamento a Premi TPAY</a> </p>
             </li>
-            <li class="col-lg-3"> <a href="#">Press & News</a> </li>
-            <li class="col-lg-3"> <a href="#">© 2019 Helbiz</a> </li>
+            <li class="col-lg-3 col-md-3 col-xs-12"> <a href="#">Press & News</a> </li>
+            <li class="col-lg-3 col-md-3 col-xs-12"> <a href="#">© 2019 Helbiz</a> </li>
           </ul>
         </div>
         <!-- stores -->
         <div id="stores">
           <div class="container">
-            <div class="col-lg-offset-3 col-lg-2">
+            <div class="col-lg-offset-3 col-lg-3">
               <a href="#"> <img src="img\apple.svg" alt="ios" class="radius"> </a>
             </div>
-            <div class="col-lg-offset-3 col-lg-2">
+            <div class="col-lg-offset-2 col-lg-3">
               <a href="#"> <img src="img\google.svg" alt="android" class="radius"> </a>
             </div>
           </div>
