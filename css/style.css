@@ -75,6 +75,7 @@
         color: white;
         font-size: 20px;
       }
+
   /* title */
   #title {
     margin-top: 50px;
@@ -141,6 +142,7 @@
       background-image: url("../img/HelbizBanner.jpg");
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: 20% 0;
     }
 
     .how-down {
@@ -306,24 +308,24 @@
       padding: 60px 0;
     }
 
-    .logo.bottom {
-      margin-top: 0;
-      margin-bottom: 30px;
-    }
+      .logo.bottom {
+        margin-top: 0;
+        margin-bottom: 30px;
+      }
 
-    #info ul li h4 {
-      margin-bottom: 20px;
-    }
+          #info ul li h4 {
+            margin-bottom: 20px;
+          }
 
-    #info ul li ul li {
-      line-height: 30px;
-    }
+            #info ul li ul li {
+              line-height: 30px;
+            }
 
-     #info ul li a,
-     #info ul li ul li a {
-       text-decoration: none;
-       color: rgba(182, 182, 182, 0.5);
-     }
+           #info ul li a,
+           #info ul li ul li a {
+             text-decoration: none;
+             color: rgba(182, 182, 182, 0.5);
+           }
 
     /* social */
     #social {
@@ -333,15 +335,14 @@
       line-height: 30px;
     }
 
-    #social ul li a,
-    #social ul li ul li a {
-      text-decoration: none;
-      color: white;
-    }
+            #social ul li a,
+            #social ul li ul li a {
+              text-decoration: none;
+              color: white;
+            }
 
     /* stores */
     #stores {
-      width: 30%;
       margin: 30px auto;
     }
 
@@ -349,9 +350,10 @@
         border: 1px solid white;
         border-radius: 5px;
         width: 100px;
+        display: inline;
       }
 
-@@media all and (min-width: 992px) {
+@media all and (min-width: 992px) {
 
   #hamburger {
     display: none;
@@ -364,14 +366,22 @@
   nav div ul {
     display: none;
   }
+
+  .how-up {
+    background-position: 30% 0;
+  }
+
   .how-down {
     padding-top: 150px;
+  }
+
+  #smart {
+    width: 40%
   }
 
   #get {
     background-size: 400px;
   }
-
 }
 
 @media all and (max-width: 768px) {
@@ -393,6 +403,16 @@
     width: 100%;
   }
 
+  #smart {
+    width: 60%;
+    left: 50%;
+  }
+
+    #smart a {
+      font-weight: bold;
+      color: black;
+    }
+
   #get {
     background-size: 400px;
     margin-bottom: 40px;
@@ -402,5 +422,4 @@
     display: inline;
     margin-right: 10px;
   }
-
 }
